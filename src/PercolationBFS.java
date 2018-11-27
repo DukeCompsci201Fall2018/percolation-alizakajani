@@ -7,7 +7,7 @@ import java.util.Queue;
  * the method dfs, which uses a Queue and a breadth-first-search,
  * rather than recursion.
  * 
- * @author alizakajani
+ * @author Aliza Kajani
  */
 public class PercolationBFS extends PercolationDFSFast {
 	

@@ -15,9 +15,10 @@ public class PercolationStats {
 	
 	 private IPercolate getPercolator(int size) {
 		 //return new PercolationBFS(size);
-         return new PercolationDFS(size); 
-		 //IUnionFind uf = new QuickUWPC();
-         //return new PercolationUF(uf,size);
+         //return new PercolationDFS(size); 
+		 //return new PercolationDFSFast(size);
+		 IUnionFind uf = new QuickUWPC();
+         return new PercolationUF(size,uf);
 	 }
 	 
 	 private ArrayList<int[]> getRandomSites(int size){

@@ -4,7 +4,7 @@
  * depth-first-search than the class PercolationDFS (which it extends)
  * to simulate percolation thresholds for a grid-base system.
  * 
- * @author alizakajani
+ * @author Aliza Kajani
  */
 
 public class PercolationDFSFast extends PercolationDFS {

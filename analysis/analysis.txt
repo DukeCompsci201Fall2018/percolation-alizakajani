@@ -1,17 +1,46 @@
-Your name
-Your netid
+Aliza Kajani
+ak398
 
 Copy/Paste results from PercolationStats using PercolationDFS
 
+	simulation data for 20 trials
+	grid	mean	stddev	time
+	100		0.593	0.014	1.013
+	200		0.591	0.010	10.817
+	400		0.590	0.006	148.612
 
 Copy/Paste results from PercolationStats using PercolationDFSFast
 
+	simulation data for 20 trials
+	grid	mean	stddev	time
+	100		0.593	0.014	0.146
+	200		0.591	0.010	0.160
+	400		0.590	0.006	0.953
+	800		0.594	0.004	6.014
+	Exception in thread "main" java.lang.StackOverflowError
 
 Copy/Paste results from PercolationStats using PercolationBFS
 
+	simulation data for 20 trials
+	grid	mean	stddev	time
+	100		0.593	0.014	0.140
+	200		0.591	0.010	0.176
+	400		0.590	0.006	0.917
+	800		0.594	0.004	6.206
+	1600	0.592	0.002	33.768
+	3200	0.593	0.001	252.865
 
 Copy/Paste results from PercolationStats using PercolationUF 
 with the QuickUWPC UnionFind implementation.
+
+	simulation data for 20 trials
+	grid	mean	stddev	time
+	100		0.593	0.014	0.126
+	200		0.591	0.010	0.187
+	400		0.590	0.006	0.702
+	800		0.594	0.004	5.023
+	1600	0.592	0.002	24.101
+	3200	0.593	0.001	193.079
 
 1. How does doubling the grid size affect running time (keeping # trials fixed)
 

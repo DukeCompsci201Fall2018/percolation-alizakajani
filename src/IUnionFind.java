@@ -1,3 +1,4 @@
+
 /**
  * Interface supported by different implementations of UnionFind algorithms.
  * 

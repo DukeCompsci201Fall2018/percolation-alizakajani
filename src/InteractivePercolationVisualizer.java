@@ -19,9 +19,11 @@ public class InteractivePercolationVisualizer {
 			N = Integer.parseInt(args[0]);
 		}
 
-		IPercolate perc = new PercolationDFS(N);
+		//IPercolate perc = new PercolationDFS(N);
 		//IPercolate perc = new PercolationUF(new QuickFind(),N); 
-
+		//IPercolate perc = new PercolationDFSFast(N);
+		IPercolate perc = new PercolationUF(N,new QuickUWPC());
+		
 		System.out.println(N);
 
 		// number of sites opened
