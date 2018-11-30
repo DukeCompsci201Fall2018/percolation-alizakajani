@@ -57,7 +57,7 @@ public class PercolationUF implements IPercolate {
 			col = q % myGrid.length + colDelta[k];
 			if (inBounds(row,col) && isOpen(row,col)) {
 				myFinder.union(q, cellVal(row,col));
-				if (row == 0) 
+				if (row == 0 && !myFinder.connected(q,VTOP)) 
 					myFinder.union(cellVal(row,col), VTOP);
 				else if (row == myGrid.length-1) 
 					myFinder.union(cellVal(row,col), VBOTTOM);
