@@ -59,7 +59,7 @@ public class PercolationStats {
 	
 	public static void main(String[] args) {
 		PercolationStats ps = new PercolationStats();
-		int trials = 20;
+		int trials = 40;
 		int first = 100;
 		int last = 3200;
 		System.out.printf("simulation data for %d trials\n",trials);

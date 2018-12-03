@@ -8,6 +8,8 @@ Copy/Paste results from PercolationStats using PercolationDFS
 	200		0.591	0.010	10.817
 	400		0.590	0.006	148.612
 
+	PercolationStats takes far too long to run using Percolation DFS.
+
 Copy/Paste results from PercolationStats using PercolationDFSFast
 	simulation data for 20 trials
 	grid	mean	stddev	time
@@ -39,10 +41,26 @@ with the QuickUWPC UnionFind implementation.
 	3200	0.593	0.001	193.079
 
 1. How does doubling the grid size affect running time (keeping # trials fixed)
-	
+	At first glance, it seems that the running time increases exponentially as the
+	grid size is doubled. Upon plotting running time vs. grid size for 20 trials and
+	applying a trendline to the data, a 2nd order polynomial seems to be the best fit
+	to describe the behavior of the increasing running time.
 
 2. How does doubling the number of trials affect running time.
+	simulation data for 40 trials
+	grid	mean	stddev	time
+	100		0.594	0.015	0.281
+	200		0.591	0.009	0.392
+	400		0.591	0.005	1.809
+	800		0.593	0.004	10.232
+	1600	0.593	0.002	44.742
+	3200	0.593	0.001	256.624
 	
+	Doubling the number of trials about doubles the running time for any given grid size.
 
 3. Estimate the largest grid size you can run in 24 hours with 20 trials. Explain your reasoning.
-	
+	I estimated the largest grid size you can run in 24 hours (86400 seconds) with 20 trials
+	to be 54166. I came to this estimate by plotting the running time vs. grid size data for
+	20 trials and applying a 2nd order polynomial trendline with an equation given by
+	y = (3E-05)x^2 - 0.03x + 5.9563. Then I plugged in 86400 seconds for y (running time)
+	and solved for x (grid size), to get x = 54166.
